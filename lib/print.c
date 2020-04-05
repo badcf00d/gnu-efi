@@ -43,9 +43,9 @@ Revision History
 #endif /* !defined(__GNUC__) */
 #endif
 
-//
-//
-//
+#ifdef __clang__
+int _fltused;       // Required for floating-point support when linked with -nostdlib
+#endif
 
 
 #define PRINT_STRING_LEN            200
